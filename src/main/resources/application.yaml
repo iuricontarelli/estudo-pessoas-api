@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./pessoas
+    username: root
+    password: senha123
+  h2:
+    console:
+      enabled: true
+      path: /h2-console-pessoas
+  jpa:
+    hibernate:
+      ddl-auto: create #update #create
+  application:
+    name: pessoas-api
